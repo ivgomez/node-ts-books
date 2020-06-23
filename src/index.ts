@@ -12,14 +12,14 @@ import "./database";
 
 // SETTINGS
 app.set("port", process.env.PORT || 3000);
-app.set("views", path.join(__dirname, "../views"));
+app.set("../views", path.join(__dirname, "../views"));
 app.engine(
   ".hbs",
   exphbs({
     extname: ".hbs",
     defaultLayout: "main",
-    layoutsDir: path.join(app.get("views"), "layouts"),
-    partialsDir: path.join(app.get("views"), "partials"),
+    layoutsDir: path.join(app.get("views"), "../views/layouts"),
+    partialsDir: path.join(app.get("views"), "../views/partials"),
     helpers: require("./lib/helpers"),
   })
 );
