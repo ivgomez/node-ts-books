@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node build/src",
+    "start": "node build/src/index.js",
     "build": "tsc",
     "clean": "rm -rf src",
     "cleanBuild": "rm -rf build",
